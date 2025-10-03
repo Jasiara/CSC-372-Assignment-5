@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Defines character encoding -->
+  <title>Rock Paper Scissors Game</title> 
+  <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+</head> 
+<body>
+  <h1>Rock Paper Scissors</h1> <!-- Main game title -->
+
+  <!-- Player Section -->
+  <section id="player"> <!-- Section for player choices -->
+    <h2>Your Choice</h2>
+    <div class="choices"> <!-- Container that holds all player choices -->
+      <figure data-choice="rock"> <!-- Each figure represents a move; data-choice stores its type -->
+        <img src="images/rock.png" alt="Rock"> <!-- Rock image -->
+        <figcaption>Rock</figcaption> <!-- Text label -->
+      </figure>
+      <figure data-choice="paper">
+        <img src="images/paper.png" alt="Paper"> <!-- Paper image -->
+        <figcaption>Paper</figcaption>
+      </figure>
+      <figure data-choice="scissors">
+        <img src="images/scissors.png" alt="Scissors"> <!-- Scissors image -->
+        <figcaption>Scissors</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Computer Section -->
+  <section id="computer"> <!-- Section for computer's choice -->
+    <h2>Computer's Choice</h2>
+    <div class="computer-throw"> <!-- Container for computer throw image -->
+      <img id="computer-img" src="images/question-mark.png" alt="Computer Throw"> <!-- Default placeholder image -->
+    </div>
+  </section>
+
+  <!-- Outcome Section -->
+  <section id="outcome"> <!-- Section for displaying the result -->
+    <h2>Result</h2>
+    <p id="result-text">Make your move!</p> <!-- Updated dynamically with game result -->
+  </section>
+
+  <!-- Scoreboard Section -->
+  <section id="scoreboard"> <!-- Section for scoreboard tracking -->
+    <h2>Scoreboard</h2>
+    <p>Wins: <span id="wins">0</span></p> <!-- Span updates with number of wins -->
+    <p>Losses: <span id="losses">0</span></p> <!-- Span updates with number of losses -->
+    <p>Ties: <span id="ties">0</span></p> <!-- Span updates with number of ties -->
+    <button id="reset">Reset</button> <!-- Button resets the scoreboard and game -->
+  </section>
+
+  <!-- External JavaScript file that controls game logic -->
+  <script src="script.js"></script>
+</body>
+</html>

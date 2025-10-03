@@ -1,0 +1,85 @@
+/* ===== Global Page Styles ===== */
+body {
+  font-family: Arial, sans-serif;       /* Use a clean, readable font */
+  font-weight: bold;                   /* Make all text bold */
+  text-align: center;                  /* Center text alignment */
+  margin: 20px;                        /* Add space around the page */
+  background: linear-gradient(135deg, #37bbc5, #c752d2); 
+  /* Gradient background at a 135° angle 
+     going from teal (#37bbc5) to purple (#c752d2) */
+}
+
+h1 {
+  margin-bottom: 20px; /* Space below main heading */
+}
+
+/* ===== Section Containers ===== */
+section {
+  margin: 20px 0;                         /* Space above and below section */
+  padding: 15px;                          /* Inner spacing inside section */
+  border: 2px solid #ccc;                 /* Light gray border */
+  border-radius: 10px;                    /* Rounded corners */
+  width: 40%;                             /* Make sections narrower (40% width) */
+  margin: 25px auto;                      /* Center horizontally */
+  background: #fff;                       /* White background */
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1); 
+  /* Subtle shadow for depth */
+}
+
+/* ===== Choices Layout (Player Options) ===== */
+.choices {
+  display: flex;                /* Flexbox layout */
+  justify-content: center;      /* Center items horizontally */
+  gap: 20px;                    /* Space between choices */
+}
+
+/* ===== Individual Choice Figures ===== */
+figure {
+  border: 2px solid transparent;    /* Start with invisible border */
+  border-radius: 10px;              /* Rounded edges */
+  padding: 1px;                     /* Small inner padding */
+  cursor: pointer;                  /* Show pointer on hover */
+  transition: border 0.3s;          /* Smooth transition for border */
+}
+
+/* Hover effect for choices */
+figure:hover {
+  transform: scale(1.20);                   /* Slight zoom on hover */
+  border-color: #9dcfe0;                    /* Light blue border */
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);   /* Drop shadow effect */
+}
+
+/* Highlight the selected choice */
+figure.selected {
+  border: 2px solid #d1bcd2;                            /* Purple border */
+  background: linear-gradient(135deg, #5aa1f3, #c752d2); 
+  /* Gradient background when selected */
+}
+
+/* Images inside figure (rock, paper, scissors) */
+figure img {
+  width: 100px;   /* Set image width */
+  height: 100px;  /* Set image height */
+}
+
+/* Computer’s image is slightly larger */
+#computer-img {
+  width: 120px;
+  height: 120px;
+}
+
+/* ===== Buttons (like Reset) ===== */
+button {
+  padding: 10px 15px;           /* Spacing inside button */
+  border: none;                 /* Remove default border */
+  background: #37BBC5;          /* Default teal background */
+  color: white;                 /* White text */
+  font-size: 1rem;              /* Standard readable size */
+  border-radius: 5px;           /* Rounded corners */
+  cursor: pointer;              /* Pointer cursor */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background: #c752d2;          /* Purple background when hovered */
+}
