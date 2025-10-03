@@ -44,7 +44,7 @@ function playGame(playerChoice) {
   // Shuffle computer images every 0.5 seconds
   const shuffleInterval = setInterval(() => {
     const randomChoice = choices[Math.floor(Math.random() * 3)];
-    computerImg.src = `images/${randomChoice}.png`; // temporarily show random images
+    computerImg.src = `images/${randomChoice}.PNG`; // temporarily show random images
   }, 500);
 
   // After 3 seconds, stop shuffling and pick final choice
@@ -53,7 +53,7 @@ function playGame(playerChoice) {
 
     // Computer makes its real random choice
     const computerChoice = choices[Math.floor(Math.random() * 3)];
-    computerImg.src = `images/${computerChoice}.png`;
+    computerImg.src = `images/${computerChoice}.PNG`;
 
     // Decide winner based on player vs computer
     decideWinner(playerChoice, computerChoice);
@@ -96,7 +96,7 @@ resetBtn.addEventListener("click", () => {
   resultText.textContent = "Make your move!";
 
   // Reset computer image to default question mark
-  computerImg.src = "images/question-mark.png";
+  computerImg.src = "images/question-mark.PNG";
 
   // Clear any highlighted player choice
   playerFigures.forEach(f => f.classList.remove("selected"));
